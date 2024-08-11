@@ -23,10 +23,15 @@ const int colPins[numCols] = {5, 6, 7, 8, 9}; // Use appropriate digital pins
 #define ENCODER_PIN2 3
 #define RESET_PIN A3 // Pin to be used for reset functionality
 
+// Debounce time in milliseconds
+const unsigned long debounceTime = 100; // Increased debounce time
+
 // Create encoder object
 Encoder myEnc(ENCODER_PIN1, ENCODER_PIN2);
 
 long oldPosition = -999;
+unsigned long lastDebounceTime[numRows][numCols];  // To track debounce timing
+bool keyState[numRows][numCols];  // To track the state of each key
 
 void setup() {
   // Initialize Serial Monitor for debugging
@@ -49,6 +54,9 @@ void setup() {
   for (int i = 0; i < numRows; i++) {
     pinMode(rowPins[i], OUTPUT);
     digitalWrite(rowPins[i], HIGH); // Set row pins high
+    for (int j = 0; j < numCols; j++) {
+      keyState[i][j] = false; // Initialize all key states to false (unpressed)
+    }
   }
 
   // Initialize the column pins as inputs with pullup resistors
@@ -74,12 +82,25 @@ void loop() {
     digitalWrite(rowPins[row], LOW); // Activate the current row
     for (int col = 0; col < numCols; col++) {
       if (keys[row][col] == 0) continue; // Skip undefined keys
-      if (digitalRead(colPins[col]) == LOW) { // Check if the button is pressed
-        Keyboard.press(keys[row][col]);
-        Serial.print("Key Pressed: ");
-        Serial.println(keys[row][col]);
-        delay(100); // Debounce delay
-        Keyboard.release(keys[row][col]);
+      
+      // Debouncing and state machine logic
+      unsigned long currentTime = millis();
+      if (digitalRead(colPins[col]) == LOW) { // Button is pressed
+        if (keyState[row][col] == false && (currentTime - lastDebounceTime[row][col] > debounceTime)) {
+          keyState[row][col] = true; // Mark key as pressed
+          Keyboard.press(keys[row][col]);
+          Serial.print("Key Pressed: ");
+          Serial.println(keys[row][col]);
+          lastDebounceTime[row][col] = currentTime; // Update debounce time
+        }
+      } else { // Button is released
+        if (keyState[row][col] == true) {
+          keyState[row][col] = false; // Mark key as released
+          Keyboard.release(keys[row][col]);
+          Serial.print("Key Released: ");
+          Serial.println(keys[row][col]);
+          delay(100); // Additional delay to ensure the key doesn't repeat
+        }
       }
     }
     digitalWrite(rowPins[row], HIGH); // Deactivate the current row
