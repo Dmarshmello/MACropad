@@ -26,7 +26,8 @@ This project involves building a 4x4 switch macropad with a rotary encoder and a
 
 **Created by:** Ethan Dmello
 
-**Monash Association of Coding (MAC)**
+## Monash Association of Coding (MAC)
+- **Website:** [https://www.monashcoding.com/](https://www.monashcoding.com/)
+- **Instagram:** [https://www.instagram.com/monashcoding/](https://www.instagram.com/monashcoding/)
 
-| Website | https://www.monashcoding.com/ |
-|Instagram | https://www.instagram.com/monashcoding/ |
+![MAC Logo](images/logo.png)
