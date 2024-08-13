@@ -69,11 +69,6 @@ To install these libraries, you need to include them in your `platformio.ini` fi
    - Navigate to the root directory of your PlatformIO project and locate the `platformio.ini` file. Open this file in your code editor.
 
 2. **Add the Required Libraries**:
-   - 
-   ```ini
-   lib_deps = 
-       paulstoffregen/Encoder@^1.4.4
-       arduino-libraries/Keyboard
 
    Example:
    ```ini
