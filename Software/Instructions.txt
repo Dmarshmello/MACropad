@@ -1,0 +1,11 @@
+Building your Macropad using PlatformIO in Visual Studio Code
+
+Requirements
+- Visual Studios
+
+
+- PlatformIO
+Open Visual Studio Code.
+Click on the Extensions icon in the left sidebar or press Ctrl+Shift+X.
+In the search bar, type "PlatformIO IDE".
+Click Install on the "PlatformIO IDE" extension.
