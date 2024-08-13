@@ -17,7 +17,6 @@ const int colPins[numCols] = {5, 6, 7, 8, 9};
 
 #define ENCODER_PIN1 2
 #define ENCODER_PIN2 3
-#define RESET_PIN A3
 
 const unsigned long debounceTime = 100;
 
@@ -35,12 +34,9 @@ void setup() {
   Serial.println("Pro Micro connected and ready!");
 
   pinMode(LED_BUILTIN, OUTPUT);
-  for (int i = 0; i < 3; i++) {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
-  }
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(3000);
+  digitalWrite(LED_BUILTIN, LOW);
 
   for (int i = 0; i < numRows; i++) {
     pinMode(rowPins[i], OUTPUT);
@@ -54,16 +50,11 @@ void setup() {
     pinMode(colPins[i], INPUT_PULLUP);
   }
 
-  pinMode(RESET_PIN, OUTPUT);
-  digitalWrite(RESET_PIN, HIGH);
-
   Keyboard.begin();
   Serial.println("Keyboard library initialized.");
 }
 
 void loop() {
-  digitalWrite(RESET_PIN, HIGH);
-
   for (int row = 0; row < numRows; row++) {
     digitalWrite(rowPins[row], LOW); 
     for (int col = 0; col < numCols; col++) {
@@ -72,7 +63,6 @@ void loop() {
       unsigned long currentTime = millis();
       if (digitalRead(colPins[col]) == LOW) {
         if (keyState[row][col] == false && (currentTime - lastDebounceTime[row][col] > debounceTime)) {
-          // Check if only one key is pressed in this row
           bool multipleKeysPressed = false;
           for (int checkCol = 0; checkCol < numCols; checkCol++) {
             if (checkCol != col && digitalRead(colPins[checkCol]) == LOW) {
@@ -92,7 +82,6 @@ void loop() {
       } else {
         if (keyState[row][col] == true) {
           keyState[row][col] = false;
-          Keyboard.release(keys[row][col]);
           Serial.print("Key Released: ");
           Serial.println(keys[row][col]);
           delay(100);
