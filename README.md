@@ -30,4 +30,4 @@ This project involves building a 4x4 switch macropad with a rotary encoder and a
 - **Website:** [https://www.monashcoding.com/](https://www.monashcoding.com/)
 - **Instagram:** [https://www.instagram.com/monashcoding/](https://www.instagram.com/monashcoding/)
 
-![MAC Logo](images/logo.png)
+![MAC Logo](images/monashcoding_logo.png)
