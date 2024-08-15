@@ -1,3 +1,20 @@
+/*
+ * ------------------------------
+ * MACropad | MAC x SMEE Workshop
+ * 
+ * Project: Numpad Testing
+ * Description: This program is built to help debug the macropad during the hardware 
+ *              development stage, it numbers the buttons 1 through to 16 based on 
+ *              the layout. The program communicates via serial print lines, which 
+ *              requires vscode terminal serial monitor.
+ *               
+ * 
+ * Author: Ethan Dmello
+ * Date: 8/13/2024
+ * --------------------------------
+ */
+
+
 #include <Arduino.h>
 #include <Keyboard.h>
 #include <Encoder.h>

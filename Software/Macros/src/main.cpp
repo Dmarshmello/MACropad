@@ -1,17 +1,16 @@
 /*
- * -----------------------------------------------------------------------------
+ * ------------------------------
  * MACropad | MAC x SMEE Workshop
  * 
  * Project: Macros
- * Description: This program defines the MACROPAD layout and its associated 
- *              macros based on the orientation of the device. It monitors user 
- *              input through a matrix of rows and columns, triggering specific 
- *              functions tied to each button. Each function executes a unique 
- *              macro, allowing for customizable keyboard shortcuts and commands.
+ * Description: This program defines the MACROPAD layout and its associated macros based on the 
+ *              orientation of the device. It monitors user input through a matrix of rows and 
+ *              columns. Each function executes a unique macro, allowing for customizable 
+ *              keyboard shortcuts and commands.
  * 
  * Author: Ethan Dmello
  * Date: 8/13/2024
- * -----------------------------------------------------------------------------
+ * --------------------------------
  */
 
 #include <Arduino.h>
@@ -230,6 +229,8 @@ void macro3() {
 
   Keyboard.press(KEY_RETURN);
   delay(100);
+
+  //opens google in a new tab
   Keyboard.releaseAll();
   Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press(KEY_LEFT_SHIFT);
