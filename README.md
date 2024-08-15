@@ -26,8 +26,37 @@ This project involves building a 4x4 switch macropad with a rotary encoder and a
 
 **Created by:** Ethan Dmello
 
-## Monash Association of Coding (MAC)
-- **Website:** [https://www.monashcoding.com/](https://www.monashcoding.com/)
-- **Instagram:** [https://www.instagram.com/monashcoding/](https://www.instagram.com/monashcoding/)
 
-![MAC Logo](images/monashcoding_logo.jpg)
+## Monash Association of Coding (MAC)
+
+## Connect with Us
+
+<div style="display: flex; align-items: center;">
+  <a href="https://www.facebook.com/monashcoding" target="_blank">
+    <img src="images/facebook_icon.png" alt="Facebook" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="https://www.instagram.com/monashcoding/" target="_blank">
+    <img src="images/instagram_icon.png" alt="Instagram" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="https://www.linkedin.com/company/monashcoding" target="_blank">
+    <img src="images/linkedin_icon.png" alt="LinkedIn" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="http://monash.club/discord" target="_blank">
+    <img src="images/discord_icon.png" alt="Discord" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="mailto:coding@monashclubs.org" target="_blank">
+    <img src="images/email_icon.png" alt="Email" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="https://www.youtube.com/channel/UCxEz0QrpHJyLiWsVFgfUrRw" target="_blank">
+    <img src="images/youtube_icon.png" alt="YouTube" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="https://github.com/monashcoding" target="_blank">
+    <img src="images/github_icon.png" alt="GitHub" style="width: 28px; margin-right: 10px;">
+  </a>
+  <a href="https://medium.com/@monashcoding" target="_blank">
+    <img src="images/medium_icon.png" alt="Medium" style="width: 28px; margin-right: 10px;">
+  </a>
+</div>
+
+
+
