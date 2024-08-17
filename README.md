@@ -10,6 +10,12 @@
 
 <p>This project involves building a 4x4 switch macropad with a rotary encoder and a single button. It was developed for the Monash Association of Coding (MAC) Macropad Workshop.</p>
 
+<div style="display: flex; margin-bottom: 30px;">
+    <img src="images/mat.jpg" alt="Diode Orientation" style="width:500px; margin-right: 10px;">
+    <img src="images/closeup.jpg" alt="Diode Orientation" style="width:500px; margin-right: 10px;">
+</div>
+
+
 <h2>Hardware</h2>
 
 <h3>Components Used:</h3>
@@ -27,6 +33,9 @@
     <li><strong>Keycaps:</strong> 16 keycaps</li>
     <li><strong>Enclosure:</strong> 3D Printed Case and Rotary Cap</li>
 </ul>
+
+<h2></h2>
+
 
 <img src="images/AllParts.jpg" alt="All Parts" style="width:500px; margin-bottom: 30px;">
 
@@ -53,6 +62,8 @@
         <td><a href="https://cafege.com.au/">https://cafege.com.au/</a></td>
     </tr>
 </table>
+
+<h2></h2>
 
 <h1>Build Guide</h1>
 
