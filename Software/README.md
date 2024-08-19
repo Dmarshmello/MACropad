@@ -7,6 +7,8 @@ This guide provides a step-by-step process to set up and program your Macropad u
 - **Visual Studio Code**: The code editor where you will write, compile, and upload your code.
 - **PlatformIO**: An extension for Visual Studio Code that simplifies development for embedded systems like the Pro Micro.
 
+You can edit the pre-defined macros based on your main use of the pad here is a list of common macros. https://support.microsoft.com/en-au/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec
+
 ## Installation
 
 ### Step 1: Install Visual Studio Code
