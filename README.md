@@ -9,7 +9,7 @@
 
 <h1>Macropad - MAC x SMEE</h1>
 
-<p>This project involves building a 4x4 switch macropad with a rotary encoder and a single button. It was developed for the Monash Association of Coding (MAC) Macropad Workshop.</p>
+<p>This project involves building a 4x4 switch macropad with a rotary encoder and a single button. It was developed for the Monash Association of Coding (MAC) Macropad Workshop. https://support.microsoft.com/en-au/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec</p>
 
 <h2>Hardware</h2>
 
