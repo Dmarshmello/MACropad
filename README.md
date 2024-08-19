@@ -11,8 +11,8 @@
 <p>This project involves building a 4x4 switch macropad with a rotary encoder and a single button. It was developed for the Monash Association of Coding (MAC) Macropad Workshop.
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/mat.jpg" alt="Diode Orientation" style="width:450px; margin-right: 10px;">
-    <img src="images/closeup.jpg" alt="Diode Orientation" style="width:450px; margin-right: 10px;">
+    <img src="images/mat.jpg" alt="Diode Orientation" style="width:350px; margin-right: 10px;">
+    <img src="images/closeup.jpg" alt="Diode Orientation" style="width:350px; margin-right: 10px;">
 </div>
 
 
