@@ -90,12 +90,8 @@ To install these libraries, you need to include them in your `platformio.ini` fi
 2. After the code compiles successfully, click the right arrow (Upload) icon to upload the code to your Pro Micro.
 3. You should see the LED on the Pro Micro flash for 3 seconds, indicating that the code is running.
 
-### Step 6: Monitor Serial Output (Optional)
 
-1. You can view the debug output by opening the Serial Monitor. In PlatformIO, click on the plug icon in the bottom toolbar (`PlatformIO: Serial Monitor`).
-2. Ensure the baud rate is set to `9600`.
-
-### Step 7: Test the Functionality
+### Step 6: Test the Functionality
 
 1. Test the macropad buttons and the rotary encoder to ensure they are functioning as expected.
 
