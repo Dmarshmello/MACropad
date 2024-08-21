@@ -15,6 +15,9 @@
     <img src="images/closeup.jpg" alt="Diode Orientation" style="width:350px; margin-right: 10px;">
 </div>
 
+<h2>Software</h2>
+
+<p>Instructions on programming the MACROPAD can be found in the Software section. This contains a debugging directory as well as an example macro directory.</p>
 
 <h2>Hardware</h2>
 
