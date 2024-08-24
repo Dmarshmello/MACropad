@@ -16,6 +16,7 @@
 #include <Arduino.h>
 #include <Encoder.h>
 #include <HID-Project.h>  // Replacing Keyboard.h with HID-Project.h
+#include <Wire.h>
 
 /// Switch Implementation (16)
 

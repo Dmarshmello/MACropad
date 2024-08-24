@@ -14,6 +14,7 @@
 #include <Arduino.h>
 #include <Encoder.h>
 #include <HID-Project.h>
+#include <Wire.h>
 
 const int numRows = 4;
 const int numCols = 5;
