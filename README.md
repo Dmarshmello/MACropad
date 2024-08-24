@@ -8,7 +8,7 @@
 
 <h1>Macropad - MAC x SMEE</h1>
 
-<p>This project involves building a 4x4 switch macropad with a rotary encoder and a single button. It was developed for the Monash Association of Coding (MAC) Macropad Workshop.
+<p>This project involves building a 4x4 switch macropad with a rotary encoder and a single button. It was developed for the Monash Association of Coding (MAC) Macropad Workshop.</p>
 
 <div style="display: flex; margin-bottom: 30px;">
     <img src="images/mat.jpg" alt="Diode Orientation" style="width:350px; margin-right: 10px;">
@@ -37,9 +37,6 @@
     <li><strong>Enclosure:</strong> 3D Printed Case and Rotary Cap</li>
 </ul>
 
-<h2></h2>
-
-
 <img src="images/AllParts.jpg" alt="All Parts" style="width:500px; margin-bottom: 30px;">
 
 <h3>Suppliers:</h3>
@@ -65,8 +62,6 @@
         <td><a href="https://cafege.com.au/">https://cafege.com.au/</a></td>
     </tr>
 </table>
-
-<h2></h2>
 
 <h1>Build Guide</h1>
 
@@ -129,7 +124,7 @@
     <img src="images/Covercut.jpg" alt="Cover and cut" style="width:250px;">
 </div>
 
-<h3>Final Soldering</h3>
+<h3>Soldering Top of PCB</h3>
 <ul>
     <li>Turn the board back over and solder the remaining pins.</li>
 </ul>
@@ -144,14 +139,73 @@
     <li>The button should slide in easily, and its orientation should match the image provided.</li>
 </ul>
 
-<img src="images/Button.jpg" alt="Button Placement" style="width:450px; margin-bottom: 30px;">
+<img src="images/Button.jpg" alt="Button Placement" style="width:350px; margin-bottom: 30px;">
 
 <h3>Solder the Button</h3>
 <ul>
     <li>Flip the board over and solder the button's pins.</li>
 </ul>
 
-<img src="images/ButtonSolder.jpg" alt="Button Soldered" style="width:450px; margin-bottom: 30px;">
+<img src="images/ButtonSolder.jpg" alt="Button Soldered" style="width:350px; margin-bottom: 30px;">
+
+<h2>4. Install the Rotary Encoder</h2>
+
+<p>As the rotary encoder does not fit flush on top of your PCB, follow these steps:</p>
+
+<div style="display: flex; margin-bottom: 30px;">
+    <img src="images/rotaryboard.jpg" alt="Rotary Encoder Board" style="width:350px; margin-right: 10px;">
+    <img src="images/RotaryNotFit.jpg" alt="Rotary Encoder Not Fit" style="width:400px;">
+</div>
+
+<h3>Modify the Rotary Encoder</h3>
+<ul>
+    <li>Bend the side tabs away from the encoder.</li>
+</ul>
+
+<div style="display: flex; margin-bottom: 30px;">
+    <img src="images/BendRotary.jpg" alt="Bend Rotary Encoder" style="width:300px; margin-right: 10px;">
+    <img src="images/NormVsBent.jpg" alt="Normal vs Bent" style="width:300px;">
+</div>
+
+<ul>
+    <li>Cut off the side tabs while holding them away from your face and covering them.</li>
+</ul>
+
+<div style="display: flex; margin-bottom: 30px;">
+    <img src="images/RotaryCut.jpg" alt="Cut Rotary Tabs" style="width:400px; margin-right: 10px;">
+    <img src="images/CutPcb.jpg" alt="Cut PCB" style="width:400px;">
+</div>
+
+<h3>Solder the Rotary Encoder</h3>
+<ul>
+    <li>Turn over the board and solder your rotary encoder via the 5 pins: 3 small and 2 regular, opposite each other.</li>
+</ul>
+
+<img src="images/SolderRotary.jpg" alt="Solder Rotary Encoder" style="width:450px; margin-bottom: 30px;">
+
+<h2>5. Fit Your Case</h2>
+
+<ul>
+    <li>Place your board within your 3D printed case, and screw it down with 4 Torx screws.</li>
+</ul>
+
+<div style="display: flex; margin-bottom: 30px;">
+    <img src="images/CasePcb.jpg" alt="Case and PCB" style="width:450px; margin-right: 10px;">
+    <img src="images/ScrewedPcb.jpg" alt="Screwed PCB" style="width:450px;">
+</div>
+
+<h2>6. Attach the Keycaps</h2>
+
+<ul>
+    <li>Place your keycaps and rotary encoder caps on your macropad.</li>
+</ul>
+
+<div style="display: flex; margin-bottom: 30px;">
+    <img src="images/FinishedMacropad.jpg" alt="Finished Macropad" style="width:450px; margin-right: 10px;">
+    <img src="images/Finished2.0.jpg" alt="Finished Macropad 2.0" style="width:450px;">
+</div>
+
+<h1>CONGRATULATIONS!!!</h1>
 
 <p><strong>Created by:</strong> Ethan Dmello</p>
 
