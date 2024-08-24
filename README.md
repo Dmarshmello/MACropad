@@ -163,7 +163,7 @@
 </ul>
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/BendRotary.jpg" alt="Bend Rotary Encoder" style="width:300px; margin-right: 10px;">
+    <img src="images/BendRotary.jpg" alt="Bend Rotary Encoder" style="width:415px; margin-right: 10px;">
     <img src="images/NormVsBent.jpg" alt="Normal vs Bent" style="width:300px;">
 </div>
 
