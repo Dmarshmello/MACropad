@@ -153,8 +153,8 @@
 <p>As the rotary encoder does not fit flush on top of your PCB, follow these steps:</p>
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/rotaryboard.jpg" alt="Rotary Encoder Board" style="width:350px; margin-right: 10px;">
-    <img src="images/RotaryNotFit.jpg" alt="Rotary Encoder Not Fit" style="width:490px;">
+    <img src="images/rotaryboard.jpg" alt="Rotary Encoder Board" style="width:285px; margin-right: 10px;">
+    <img src="images/RotaryNotFit.jpg" alt="Rotary Encoder Not Fit" style="width:400px;">
 </div>
 
 <h3>Modify the Rotary Encoder</h3>
