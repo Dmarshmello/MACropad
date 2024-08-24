@@ -120,7 +120,7 @@
 </ul>
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/CutMicro.jpg" alt="Cut legs" style="width:450px; margin-right: 10px;">
+    <img src="images/CutMicro.jpg" alt="Cut legs" style="width:520px; margin-right: 10px;">
     <img src="images/Covercut.jpg" alt="Cover and cut" style="width:250px;">
 </div>
 
@@ -154,7 +154,7 @@
 
 <div style="display: flex; margin-bottom: 30px;">
     <img src="images/rotaryboard.jpg" alt="Rotary Encoder Board" style="width:350px; margin-right: 10px;">
-    <img src="images/RotaryNotFit.jpg" alt="Rotary Encoder Not Fit" style="width:400px;">
+    <img src="images/RotaryNotFit.jpg" alt="Rotary Encoder Not Fit" style="width:490px;">
 </div>
 
 <h3>Modify the Rotary Encoder</h3>
@@ -172,8 +172,8 @@
 </ul>
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/RotaryCut.jpg" alt="Cut Rotary Tabs" style="width:400px; margin-right: 10px;">
-    <img src="images/CutPcb.jpg" alt="Cut PCB" style="width:400px;">
+    <img src="images/RotaryCut.jpg" alt="Cut Rotary Tabs" style="width:310px; margin-right: 10px;">
+    <img src="images/CutPcb.jpg" alt="Cut PCB" style="width:300px;">
 </div>
 
 <h3>Solder the Rotary Encoder</h3>
@@ -190,19 +190,19 @@
 </ul>
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/CasePcb.jpg" alt="Case and PCB" style="width:450px; margin-right: 10px;">
-    <img src="images/ScrewedPcb.jpg" alt="Screwed PCB" style="width:450px;">
+    <img src="images/CasePcb.jpg" alt="Case and PCB" style="width:350px; margin-right: 10px;">
+    <img src="images/ScrewedPcb.jpg" alt="Screwed PCB" style="width:300px;">
 </div>
 
 <h2>6. Attach the Keycaps</h2>
 
 <ul>
-    <li>Place your keycaps and rotary encoder caps on your macropad.</li>
+    <li>Place your keycaps and rotary encoder cap on your macropad.</li>
 </ul>
 
 <div style="display: flex; margin-bottom: 30px;">
-    <img src="images/FinishedMacropad.jpg" alt="Finished Macropad" style="width:450px; margin-right: 10px;">
-    <img src="images/Finished2.0.jpg" alt="Finished Macropad 2.0" style="width:450px;">
+    <img src="images/FinishedMacropad.jpg" alt="Finished Macropad" style="width:330px; margin-right: 10px;">
+    <img src="images/Finished2.0.jpg" alt="Finished Macropad 2.0" style="width:250px;">
 </div>
 
 <h1>CONGRATULATIONS!!!</h1>
