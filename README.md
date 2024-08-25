@@ -63,6 +63,15 @@
     </tr>
 </table>
 
+<p><strong>Keyboard Maintainer:</strong> imchipwood<br>
+   <a href="https://github.com/imchipwood/dumbpad">https://github.com/imchipwood/dumbpad</a>
+</p>
+
+<p><strong>Special Thanks:</strong> customKBD for all the help<br>
+   <a href="https://github.com/customkbd/Dumbpad/tree/main/source">https://github.com/customkbd/Dumbpad/tree/main/source</a>
+</p>
+
+
 <h1>Build Guide</h1>
 
 <h2>1. Solder the Diodes</h2>
