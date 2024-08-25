@@ -7,7 +7,9 @@ This guide provides a step-by-step process to set up and program your Macropad u
 - **Visual Studio Code**: The code editor where you will write, compile, and upload your code.
 - **PlatformIO**: An extension for Visual Studio Code that simplifies development for embedded systems like the Pro Micro.
 
-You can edit the pre-defined macros based on your main use of the pad here is a list of common macros. https://support.microsoft.com/en-au/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec
+You can edit the pre-defined macros based on your main use of the pad here is a list of common macros. 
+
+https://support.microsoft.com/en-au/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec
 
 ## Installation
 
@@ -30,7 +32,7 @@ You can edit the pre-defined macros based on your main use of the pad here is a 
 1. Open PlatformIO Home by clicking the extension on the left toolbar.
 2. Click on "New Project".
 3. **Project Name:** Enter a name for your project, e.g., `MAC Macropad`.
-4. **Board:** Select `SparkFun Pro Micro` from the dropdown list.
+4. **Board:** Select `Arduino leonardo` from the dropdown list.
 5. **Framework:** Select `Arduino`.
 6. Click `Finish`. PlatformIO will set up the project with the necessary files and directories.
 
@@ -60,6 +62,7 @@ To ensure your macropad functions correctly, you'll need to install the followin
 
 - **paulstoffregen: Encoder@^1.4.4**
 - **arduino-libraries: Keyboard**
+- **nicohood/HID-Project@^2.8.4**
 
 These libraries provide the necessary functionality for reading the rotary encoder and simulating keyboard inputs.
 
@@ -74,15 +77,16 @@ To install these libraries, you need to include them in your `platformio.ini` fi
 
    Example:
    ```ini
-   [env:sparkfun_promicro16]
+   [env:leonardo]
    platform = atmelavr
-   board = sparkfun_promicro16
+   board = leonardo
    framework = arduino
    lib_deps = 
-       paulstoffregen/Encoder@^1.4.4
-       arduino-libraries/Keyboard
+   	paulstoffregen/Encoder@^1.4.4
+   	arduino-libraries/Keyboard
+   	nicohood/HID-Project@^2.8.4
    upload_port = COMx  ; Replace 'x' with your actual COM port number
-    ---
+   
 
 ### Step 6: Build and Upload the Code
 
