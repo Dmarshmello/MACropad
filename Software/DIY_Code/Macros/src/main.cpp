@@ -15,13 +15,13 @@
 
 #include <Arduino.h>
 #include <Encoder.h>
-#include <HID-Project.h>  // Replacing Keyboard.h with HID-Project.h
+#include <HID-Project.h> 
 #include <Wire.h>
 
 /// Switch Implementation (16)
 
 // Define PCB matrix 4x4 buttons
-const int totalButtons = 16;
+const int totalButtons = 17;
 const int numRows = 4;
 const int numCols = 5;            // includes the rotary encoder
 bool keyState[numRows][numCols];  // state of each button, pressed or not
@@ -59,29 +59,31 @@ void bluetooth();
 void openTab();
 void openDiscord();
 void screenCapture();
+void hello();
 void mute();
 void volumeUp();   // Function for Volume Up
 void volumeDown(); // Function for Volume Down
+void gap();
 
 /*Button Layout based on orientation of your board:
  * I decided vertical so the microcontroller sits at the top so my numbering is
  *                
- *   {(promicro)   "3",    "7",   "11",   "15"},
- *   {             "2",    "6",   "10",   "14"},
- *   {             "1",    "5",   "9",    "13"},
- *   {( rotary)    "0",    "4",   "8",    "12"}
- *                  ^       ^      ^        ^
- *                 row0    row1   row2    row3
+ *   {(gap - promicro)   "0",     "1",    "2",     "3"},
+ *   {(gap)              "4",     "5",    "6",     "7"},
+ *   {(gap)              "8",     "9",    "10",    "11"},
+ *   {(12 - rotary)      "13",    "14",   "15",    "16"}
+ *         ^              ^        ^       ^        ^
+ *        row0           row1     row2    row3     row4
  * 
  * Now arrange your functions in the layout you want, remember that the board was wired 
  * horizontally which is why my functions are organized based on numbering above 
 */
 
 void (*buttonFunctions[totalButtons])() = {
-    openNewGoogleTab,   openSpotify,      putComputerToSleep,   micOnOff,        
-    minimizeWindow,     openMoodle,       openCalculator,       cameraOnOff,        
-    closeTab,           openVScode,       cntrlShiftT,          bluetooth,
-    openTab,            openDiscord,      screenCapture,        mute           
+            openNewGoogleTab,   openSpotify,      putComputerToSleep,   micOnOff,        
+            minimizeWindow,     openMoodle,       openCalculator,       cameraOnOff,        
+            closeTab,           openVScode,       cntrlShiftT,          bluetooth,
+    mute,   openTab,            openDiscord,      screenCapture,        gap          
 };
 
 void setup() {
@@ -116,9 +118,14 @@ void loop() {
     digitalWrite(rowPins[row], LOW); // Activate the current row
 
     // Iterate through each column in the current row
-    for (int col = 1; col < numCols; col++) { // Start from col=1 because col=0 is the encoder
-      int buttonIndex = row * 4 + (col - 1); // Simplified calculation
-
+    for (int col = 0; col < numCols; col++) { // Start from col=1 because col=0 is the encoder
+      int buttonIndex;
+      if (row == 3) {
+          buttonIndex = 12 + col;  // Row 4 has no gap
+      } else {
+          buttonIndex = (row) * 4 + (col-1);  // Rows 1, 2, and 3 have gaps
+      }
+      
       if (buttonIndex >= 0 && buttonIndex < totalButtons) {
         unsigned long currentTime = millis();
         if (digitalRead(colPins[col]) == LOW) { // If the button is pressed
@@ -314,6 +321,7 @@ void screenCapture() {
   BootKeyboard.releaseAll();
 }
 
+
 void volumeUp() {
   Consumer.write(MEDIA_VOLUME_UP);
 }
@@ -324,4 +332,9 @@ void volumeDown() {
 
 void mute() {
   Consumer.write(MEDIA_VOLUME_MUTE);
+  BootKeyboard.print("WAWAWEWA");
+}
+
+void gap() {
+  BootKeyboard.print("WAWAWEWA");
 }

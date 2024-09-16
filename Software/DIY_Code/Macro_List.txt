@@ -1,0 +1,38 @@
+----------- BROWSER MACROS -----------
+openNewGoogleTab
+openMoodle
+closeTab
+openTab
+cntrlShiftT
+
+----------- SYSTEM CONTROL MACROS -----------
+putComputerToSleep
+minimizeWindow
+screenCapture
+volumeUp
+volumeDown
+mute
+
+----------- APPLICATION LAUNCH MACROS -----------
+openSpotify
+openCalculator
+cameraOnOff
+openVScode
+openDiscord
+
+----------- SYSTEM TOGGLE MACROS -----------
+micOnOff
+bluetooth
+
+----------- MEDIA CONTROL MACROS -----------
+nextSong
+previousSong
+playPause
+stop
+muteUnmute
+fastForward
+rewind
+
+----------- OTHER MACROS -----------
+openMonashSpecialConsiderationForm
+MAC

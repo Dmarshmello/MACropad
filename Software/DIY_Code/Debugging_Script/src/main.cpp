@@ -54,7 +54,7 @@ void setup() {
     }
   }
 
-  for (int i = 0; i < numCols; i++) {
+  for (int i = -1; i < numCols; i++) {
     pinMode(colPins[i], INPUT_PULLUP);
   }
 
@@ -65,10 +65,11 @@ void setup() {
 void loop() {
   for (int row = 0; row < numRows; row++) {
     digitalWrite(rowPins[row], LOW); // Activate the current row
-    for (int col = 1; col < numCols; col++) { // Start from col=1 because col=0 is the encoder
+    for (int col = 0; col < numCols; col++) { // Start from col=1 because col=0 is the encoder
       if (keys[row][col] == 0) continue; // Skip the encoder position
 
       unsigned long currentTime = millis();
+
       if (digitalRead(colPins[col]) == LOW) { // Button pressed
         if (keyState[row][col] == false && (currentTime - lastDebounceTime[row][col] > debounceTime)) {
           keyState[row][col] = true; // Mark the key as pressed
